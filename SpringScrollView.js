@@ -21,7 +21,7 @@ import {
   ViewStyle,
   ScrollView
 } from "react-native";
-import * as TextInputState from "react-native/lib/TextInputState";
+import * as TextInputState from 'react-native/Libraries/Components/TextInput/TextInputState'
 import { FooterStatus } from "./LoadingFooter";
 import { NormalHeader } from "./NormalHeader";
 import { NormalFooter } from "./NormalFooter";
@@ -409,7 +409,7 @@ export class SpringScrollView extends React.PureComponent<SpringScrollViewPropTy
         "unsupported value: '",
         style,
         "' in SpringScrollView, " +
-          "select one in 'topping','stickyScrollView','stickyContent' please"
+        "select one in 'topping','stickyScrollView','stickyContent' please"
       );
     }
     if (this.props.inverted) transform.push({ scaleY: -1 });
@@ -451,7 +451,7 @@ export class SpringScrollView extends React.PureComponent<SpringScrollViewPropTy
         "unsupported value: '",
         style,
         "' in SpringScrollView, " +
-          "select one in 'bottoming','stickyScrollView','stickyContent' please"
+        "select one in 'bottoming','stickyScrollView','stickyContent' please"
       );
     }
     if (this.props.inverted) transform.push({ scaleY: -1 });
